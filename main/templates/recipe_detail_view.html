@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container">
+    <div class="col-md-12 col-lg-12">
+        <div class="row">
+        
+            {% for recipe in recipes}
+                    {% for cookies in cookie%}
+                        <p>{{cookies.recipe.preparation_time}}</p>
+                        <p>{{recipe.ingredients}}</p>
+                        <p>{{recipe.cooking_directions}}</p>
+                    {% endfor %}
+            {% endfor %}
+
+        <a href="/delete_view/{{recipe.pk}}/">Delete</a> 
+
+        </div>
+    </div>
+</div>    
+
+
+{% endblock body %}

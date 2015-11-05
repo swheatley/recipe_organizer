@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block body %}
+
+  
+
+    <div class="container">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+            <div class="row">
+            <br>
+            <br>
+                <div class="enter">
+                    <h1><a href="/recipe_list_view/">( Find Recipes )</a> </h1>
+                    <h1><a href="/new_entries/">( Add Entry )</a></h1>
+                </div>
+                {% comment %}
+                    <button type="button", class="btn btn-default">
+                        <span class="btn glyphicon glyphicon-edit"></span>
+                    </button>
+                {% endcomment %}
+
+                {% comment %}
+                    <div class="background_pic">
+                        <img src="{% static "IMAGES/cookie_n_milk.jpg" %}">
+                    </div>
+                {% endcomment %}
+            </div>
+        </div>
+    </div>
+
+
+{% endblock body %}

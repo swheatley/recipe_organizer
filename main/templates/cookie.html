@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+
+
+
+{% block body %}
+
+    <div class="container">
+        <div class="col-xs-6 col-md-6 col-lg-6">
+            <div class="row">
+
+                    <p>Does this work?</p>
+                    {% for recipe in cookies %}
+
+                        <p>Recipe Name: {{recipe.title}}</p>
+
+                    {% endfor %}
+
+
+
+                    {% comment %}
+
+                        {% for cookies in recipe.cookie_set.all %}
+                            
+                                <h1>Cookie:{{ cookies}}</h1>
+                                <h1>{{cookie.pk}}</h1>
+
+                                {% endfor %}
+
+                    {% endcomment%}
+              
+                    
+                   
+
+                
+
+
+
+                
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}

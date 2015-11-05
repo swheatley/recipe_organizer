@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="col-md-12 col-lg-12">
+            <div class="row">
+
+            <div class="list_title">
+
+                <h1>List of Recipes</h1>
+
+            </div>
+
+            <div class="actual_recipe">
+
+                {% for recipe in recipes %}
+                        <h2><a href="/recipe_detail_view/">{{recipe.title}}</a></h2>
+                {% endfor %}
+           
+            </div>
+                        
+                        
+                        
+                        
+                        
+
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock body %}

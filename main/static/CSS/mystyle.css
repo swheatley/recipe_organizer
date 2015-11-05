@@ -1,0 +1,74 @@
+body{
+    
+
+    font-family: 'Butterfly Kids', cursive;
+
+}
+h1{
+    text-align: center;
+    margin-top: 100px;
+
+}
+ul{
+
+    margin-left: 375px;
+    margin-top: 20px;
+   
+    
+   
+    
+}
+li{
+    list-style-position: inside;
+    list-style: none;
+    padding: 5px;
+
+    
+}
+.brand a{
+    text-decoration: none;
+    color: black;
+}
+.brand{
+    font-size: 50px;
+    margin-left: 20px;
+}
+.list_title h1{
+    text-align: left;
+    text-decoration: underline;
+}
+.navbar{
+    background-color: #38B0DE;
+
+
+}
+.navbar-default .navbar-nav>li>a{
+    color: black;
+    font-size: 24px
+}
+.navbar-default li:hover{
+    background-color: white;
+    text-decoration: underline;
+}
+.actual_recipe a{
+    text-decoration: none;
+    color: black;
+
+}
+.actual_recipe a:hover{
+    background: #38B0DE;
+    color: white;
+    padding: 15px;
+
+}
+.background_pic img{
+  margin-left:-200px;
+}
+.enter h1{
+    padding: 50px;
+    display: inline;
+}
+.enter a{
+    text-decoration: none;
+    color: black;
+}

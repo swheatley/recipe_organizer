@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <form action='/update_view/{{recipe_object.pk}}/' enctype="multipart/form-date"
+    method = "POST" >
+
+    {% csrf_token %}
+
+    <p>
+        <input type='text' name='title' value='{{recipe_object.title}} '/>
+    </p>
+
+    <p>
+        <textarea name='info' rows='10' cols='50'>
+            {{recipe_object.info}}
+        </textarea>
+    </p>
+
+
+    <p>
+        <input type='file' name='image' />
+
+    </p>
+
+
+    <p>
+        <input type='submit' value="Update Object" />
+    </p>
+
+    </form>
+
+    <p>
+        <img src="{{recipe_object.image.url}}">
+    </p>
+
+    <a href="/list_view/">Back to List</a>
+
+{% endblock %}

@@ -1,0 +1,49 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baking Organizer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "CSS/mystyle.css" %}">
+    <link rel="stylesheet" href="{% static "https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic&subset=latin,latin-ext" %}">
+    <link rel="stylesheet" href="{% static "https://fonts.googleapis.com/css?family=Butterfly+Kids&subset=latin,latin-ext" %}">
+</head>
+<body>
+
+    <div class="brand">
+      <a href="/main_page/">Baking</a>
+    </div>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            
+            
+
+            <div class="navbar_button">
+                <ul class="nav navbar-nav">
+
+                    <li><a href="/cookie/">Cookies</a></li>
+                    <li><a href="/cakes/">Cakes</a></li>
+                    <li><a href="/dessert_bars/">Dessert Bars</a></li>
+                    <li><a href="/common_ingredients/">Baking Necessities</a></li>
+                    <li><a href="/">Login</a></li>
+                    
+               
+                </button>
+            </div>
+ 
+        </div>
+    </nav>
+
+
+    {% block body %}
+
+
+
+
+    {% endblock body %}
+  
+</body>
+</html>
